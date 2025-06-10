@@ -63,7 +63,7 @@ Este enfoque permite un desarrollo ágil y realista, combinando pruebas práctic
 
 ---
 
-### 🧠 Técnicas de Prompting utilizadas
+### Técnicas de Prompting utilizadas
 
 #### 1. **Few-shot prompting**
 - **Descripción**: Se incluyen uno o más ejemplos dentro del prompt para que el modelo entienda el formato esperado.
@@ -89,5 +89,5 @@ Este enfoque permite un desarrollo ágil y realista, combinando pruebas práctic
 
 
 ## Implementación
-La implementación se encuentra en el archivo `notebook/combinaciones_IA.ipynb`, donde se simulan consultas de usuario y se generan respuestas automáticas, junto a imágenes representativas.
+La implementación se encuentra en el archivo `https://github.com/carlilopez11/Alquimia-de-Intenciones/blob/80f6eedf3d04126f465ce7236e98e53ebdc9889d/Alquimia%20de%20Intenciones.ipynb`, donde se simulan consultas de usuario y se generan respuestas automáticas, junto a imágenes representativas.
 
