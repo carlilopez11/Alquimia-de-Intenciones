@@ -1,21 +1,47 @@
 # Alquimia-de-Intenciones
 
 ## Introducción
-Este proyecto explora cómo aplicar la inteligencia artificial generativa para combinar productos naturales según intenciones energéticas específicas (limpieza, relajación, protección, etc.). La propuesta está pensada para personas o emprendimientos que trabajan con sahumerios, infusiones, velas de soja y otros elementos rituales.
+Este proyecto surge de la necesidad de conectar el uso consciente de productos naturales con herramientas tecnológicas accesibles. Muchas personas que utilizan elementos como sahumerios, velas de soja e infusiones para fines espirituales o emocionales, no siempre saben cómo combinarlos de forma coherente según una intención específica. 
+
+*Alquimia de Intenciones* busca ofrecer una solución que permita, mediante prompts diseñados con técnicas de Fast Prompting, obtener recomendaciones automáticas y explicadas. Esta herramienta no solo mejora la experiencia del usuario final, sino que también resulta útil para emprendedores del rubro que desean ofrecer kits energéticos personalizados.
+
 
 ## Presentación del problema
-Tanto vendedores como usuarios finales de productos naturales no siempre saben cómo combinarlos entre sí para potenciar su efecto energético o emocional. Esto reduce el aprovechamiento real de los productos, y dificulta la venta cruzada o la creación de kits temáticos. Se requiere una solución creativa y accesible para guiar estas combinaciones.
+En los espacios de venta y consumo de productos naturales con fines energéticos, tanto emprendedores como usuarios suelen enfrentarse a la dificultad de combinar adecuadamente sahumerios, infusiones y velas. Esta falta de orientación puede hacer que los productos pierdan efectividad simbólica, y genera incertidumbre al momento de armar un ritual o elegir un kit.
+
+Esto representa una barrera tanto para la experiencia del cliente como para las posibilidades comerciales de quienes ofrecen estos productos. La problemática tiene impacto en lo emocional, en lo simbólico y en lo práctico. Por eso, desarrollar una herramienta que sugiera combinaciones intencionadas y explicadas puede representar un avance significativo.
+
 
 ## Propuesta de solución
-Mediante prompts diseñados con técnicas de Fast Prompting, el proyecto genera recomendaciones automáticas que combinan sahumerios, velas e infusiones según una intención deseada. También se generan imágenes con IA para visualizar esas combinaciones.
+La solución propuesta consiste en diseñar una herramienta que genere automáticamente combinaciones de productos naturales según la intención energética del usuario, a través de la inteligencia artificial.
+
+Para lograrlo, se desarrolló un sistema basado en prompts que utiliza:
+
+- **Modelos de texto a texto** (OpenAI ChatGPT `gpt-3.5-turbo`): para crear combinaciones compuestas por un sahumerio, una infusión y una vela de soja, explicando el motivo de cada elección.
+- **Modelos de texto a imagen** (DALL·E): para generar visualizaciones estéticas que representen esas combinaciones como kits energéticos.
+
+Los prompts fueron diseñados utilizando técnicas de Fast Prompting para maximizar la claridad y utilidad de las respuestas, reduciendo la cantidad de consultas necesarias. Todo el flujo fue implementado y documentado en un Jupyter Notebook como prueba de concepto (POC).
+
 
 ## Justificación de viabilidad
-El proyecto utiliza herramientas gratuitas como ChatGPT, Dall-E y Jupyter Notebook. No requiere infraestructura compleja ni inversión adicional. Se trabaja con un catálogo real de productos ya existente.
+Este proyecto es viable técnica y operativamente por las siguientes razones:
+
+- Utiliza herramientas accesibles y en su mayoría gratuitas: Jupyter Notebook, PlaygroundAI, NightCafe, y la API de OpenAI.
+- Requiere únicamente una clave personal para acceder a los modelos de texto a texto, sin necesidad de una infraestructura externa compleja.
+- El notebook puede ejecutarse localmente o desde Google Colab con mínimas configuraciones.
+- El sistema es modular y escalable: se pueden añadir nuevas intenciones o productos sin alterar la estructura general del flujo.
+- La lógica implementada es comprensible y replicable por otros emprendedores, haciendo del proyecto una solución práctica y potencialmente comercializable.
+
+Además, la generación visual no requiere API paga si se utilizan plataformas alternativas, permitiendo mantener el costo del proyecto bajo control.
+
 
 ## Objetivos
-- Crear prompts efectivos para combinar productos naturales con sentido energético.
-- Experimentar con técnicas de Fast Prompting para mejorar resultados.
-- Mostrar la prueba de concepto en un entorno ejecutable y documentado.
+- Diseñar una herramienta que sugiera combinaciones de productos naturales según una intención energética o emocional.
+- Utilizar inteligencia artificial para automatizar recomendaciones explicadas y coherentes.
+- Aplicar técnicas de Fast Prompting para mejorar la calidad de los resultados y reducir el número de consultas necesarias.
+- Integrar generación de texto (ChatGPT) e imagen (DALL·E) para enriquecer la presentación de los kits sugeridos.
+- Implementar el flujo en un Jupyter Notebook funcional, documentado y replicable.
+
 
 ## Metodología
 
